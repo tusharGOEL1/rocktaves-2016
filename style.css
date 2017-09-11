@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Verdana2;
+  src: url(Verdana.ttf) format('truetype');
+}
+
+* {padding:0; margin:0; font-family: Verdana, Verdana2}
+
+@font-face {
+  font-family: BudmoJiggler;
+  src: url(budmo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: KnuckleDown;
+  src: url('knuckle down.ttf') format('truetype');
+}
+
+@-webkit-keyframes color {
+  0% {color:violet}
+  20% {color:indigo}
+  40% {color:blue}
+  60% {color:green}
+  80% {color:orange}
+  100% {color:red}
+}
+@-moz-keyframes color {
+  0% {color:violet}
+  20% {color:indigo}
+  40% {color:blue}
+  60% {color:green}
+  80% {color:orange}
+  100% {color:red}
+}
+@-o-keyframes color {
+  0% {color:violet}
+  20% {color:indigo}
+  40% {color:blue}
+  60% {color:green}
+  80% {color:orange}
+  100% {color:red}
+}
+@keyframes color {
+  0% {color:indigo}
+  12% {color:blue}
+  25% {color:green}
+  37% {color:orange}
+  50% {color:red}
+  62% {color:orange}
+  75% {color:green}
+  87% {color:blue}
+  100% {color:violet}
+}
+
+#ninja-slider{
+  height: 70%;
+  min-height: 300px;
+  z-index:0;
+}
+
+.slider-inner {
+  height: 100%;
+}
+
+.slider-inner ul {
+  height: 100% !important;
+}
+nav {
+  display: block;
+  position: relative;
+  margin-top: -50px;
+  height:50px;
+  background: rgba(0,0,0,0.85);
+  z-index: 1;
+  padding: 0 10%;
+}
+nav ul {
+  position: absolute;
+  display: block;
+}
+ nav ul li {
+   font-family: KnuckleDown;
+   display: inline-block;
+   float:left;
+   padding:15px 20px;
+   color:#fff;
+   font-size:23px;
+   line-height: 23px;
+   transition: all 0.1s linear;
+   cursor: pointer;
+   font-weight:normal;
+ }
+ nav ul li:hover {
+   background: #fff;
+   color: #000;
+ }
+
+ div.caption {
+   //animation: color 1s 1s 1s 1s 1s infinite !important;
+   bottom: calc(20% + 105px) !important;
+ }
+
+ section#content {
+   height:30%;
+   min-height; 100px;
+   background: url(img/back.png);
+   //color: #fff;
+ }
+
+ footer {
+   display: block;
+   background: #ddd;
+   height:75px;
+ }
+
+ div.normal {
+   width:100%;
+   height:100%;
+   float:left;
+   display: inline-block;
+ }
+ div.content {
+  width: 50%;
+  left: 25%;
+  position: absolute;
+ }
+ #logo {
+   position: absolute;
+   top:0;
+   left:0;
+   height:100px;
+   width:100%;
+   background:rgba(0,0,0,0.8) url(img/logo.png) center left no-repeat;
+   border-bottom: 5px solid rgba(0,0,0,0.8);
+   background-size: auto 90%;
+   z-index:10;
+   text-align:right;
+   color:#000;
+   font-size:60px;
+   line-height: 100px;
+   font-family: BudmoJiggler, Tahoma;
+   padding-right: 30px;
+   -webkit-animation: color 20s infinite;
+   -moz-animation: color 20s infinite;
+   -o-animation: color 20s infinite;
+   animation: color 20s infinite;
+ }
+
+@media all and (max-width: 658px) {
+  #logo {
+    //height: 200px;
+    //background-position: center bottom;
+    //background-size: auto 50%;
+    background-image:none;
+    text-align: center;
+  }
+  nav {
+    height: 100px;
+    margin-top:-100px;
+  }
+}
+
+.valign {
+  //position: absolute;
+}
+
+#t4 li {
+  font-size: 11px;
+}
+
+.normal p::first-line {
+  font-size: 20px !important;
+}
+
+.ns-img {
+  height:100%;
+}
